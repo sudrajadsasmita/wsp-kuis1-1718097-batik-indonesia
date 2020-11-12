@@ -161,6 +161,7 @@ class MainActivity : AppCompatActivity() {
     fun loadRecyclerView(list: ArrayList<Batik>) {
         rv_batik.layoutManager = LinearLayoutManager(this@MainActivity)
         rv_batik.adapter = cardBatikAdapter
+        rv_batik.setHasFixedSize(true)
         cardBatikAdapter.setData(list)
         cardBatikAdapter.setOnClickCallback(object : CardBatikAdapter.OnItemClickCallback {
             override fun onItemClicked(data: Batik) {
