@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:outlineAmbientShadowColor="@color/black"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_batik"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                tools:src="@drawable/ic_baseline_account_circle_black" />
+
+            <TextView
+                android:id="@+id/txt_nama_batik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@id/img_batik"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Batik" />
+
+            <TextView
+                android:id="@+id/txt_asal_batik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_nama_batik"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@id/img_batik"
+                tools:text="asal" />
+        </RelativeLayout>
+</androidx.cardview.widget.CardView>
